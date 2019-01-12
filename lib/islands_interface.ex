@@ -12,6 +12,7 @@ defmodule IslandsInterface do
       supervisor(IslandsInterface.Endpoint, []),
       # Start your own worker by calling: IslandsInterface.Worker.start_link(arg1, arg2, arg3)
       # worker(IslandsInterface.Worker, [arg1, arg2, arg3]),
+      supervisor(IslandsInterface.Presence, []),
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
